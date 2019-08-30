@@ -1,0 +1,23 @@
+Weapon,Weapon Type,Cost,Damage,Damage Type,Properties,Ranged Distance,Special Notes
+Dagger,Simple,2,1d4,Piercing,"Light, Thrown",20/60,None
+Club,Simple,1,1d4,Bludgeoning,Light,N/A,None
+Spear,Simple,1,1d6/1d8,Piercing,"Versatile, Thrown",20/60,None
+Rapier,Martial,25,1d8,Slashing,Finesse,N/A,None
+Scimitar,Martial,25,1d6/1d8,Slashing,"Light, Finesse, Versatile",N/A,None
+Longbow,Martial,50,1d8,Piercing,Ranged,150/600,None
+Javelin,Simple,1,1d6,Piercing,"Light, Thrown",N/A,None
+Quarterstaff,Simple,1,1d6/1d8,Bludgeoning,Versatile,N/A,None
+Great-Club,Simple,1,1d8,Bludgeoning,2-Handed,N/A,None
+Glaive,Martial,20,1d10,Slashing,"Heavy, Reach, 2-Handed",N/A,None
+Longsword,Martial,15,1d8/1d10,Slashing,Versatile,N/A,None
+Shortbow,Martial,25,1d6,Piercing,Ranged,80/320,None
+Shortsword,Martial,10,1d6,Slashing,"Light, Finesse",N/A,None
+Whip,Martial,10,1d4,Slashing,"Light, Finesse, Ranged",15,A whip can tangle a target and potentially knock them prone. The DC for this is 8+ your Dexterity Modifier
+Hand-Cannon,Martial,800,2d12,Piercing,"2-Handed, Ranged",30/60,"Reload 2, Misfire 3, Explosive"
+Pistol,Martial,250,1d10,Piercing,Ranged,100/400,"Reload 4, Misfire 1"
+Rifle,Martial,600,2d12,Piercing,"2-Handed, Ranged",300/1200,"Reload 1, Misfire 3"
+Light Hammer,Simple,5,1d6,Bludgeoning,,N/A,None
+Battle-Axe,Martial,10,1d8/1d10,Slashing,Versatile,N/A,None
+Hand Crossbow,Martial,75,1d6,Piercing,"Light, Ranged",30/120,Uses Bonus Action to reload.
+Great-Sword,Martial,50,2d6,Slashing,"Heavy, 2-Handed",N/A,None
+Shotgun,Martial,500,1d8,Piercing,"2-Handed, Ranged",100/800,"Reload 2, Misfire 3, Scatter"
