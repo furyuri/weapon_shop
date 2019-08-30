@@ -1,17 +1,16 @@
 body {
     font-family: monospace;
     background-color: #313131;
+    height: 100vh;
 }
-
 main {
     max-width: 40em;
     margin-left: auto;
     margin-right: auto;
     background-color: #214c6b;
     color: white;
-    padding: 5em 5em;
+    padding: 1em;
 }
-
 h1 {
     font-size: 2.5em;
     text-align: center;
@@ -24,26 +23,29 @@ span.weapon-attribute {
     font-size: 1.25em;
     letter-spacing: 1px;
 }
-
 li {
     list-style-type: none;
 }
 button {
     text-align: right;
 }
-
 table {
     padding: 10px;
     border: 1px solid gray;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1em;
 }
-
+tr {
+    display: flex;
+    flex-wrap: wrap;
+}
 td {
     padding: .5em;
 }
 p, td {
     font-size: 1.5em;
 }
-
 select, button {
     font-size: 1em;
     font-family: monospace;
@@ -68,7 +70,6 @@ button:hover {
 span.weapon-attribute {
     display: block;
 }
-
 li {
     border: 1px solid gray;
     padding: 5px;
@@ -103,4 +104,9 @@ ul {
     margin-right: auto;
     display: block;
     max-width: 30em;
+}
+@media only screen and (min-width: 768px) {
+    main {
+        padding: 3em;
+    }
 }
