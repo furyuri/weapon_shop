@@ -32,6 +32,6 @@ foreach ($rows as $row) {
     // attach to new array "$weapon_list_short"
 }
 
-$weapon_number = isset($_GET[WEAPON_NUMBER])? $_GET[WEAPON_NUMBER] : 0;
+$weapon_number = isset($_GET[WEAPON_NUMBER]) ? $_GET[WEAPON_NUMBER] : 0;
 $weapon_choice = $weapon_list[$weapon_number];
 ?>
