@@ -1,0 +1,8 @@
+## Lando Files
+.lando.yml
+
+# Local IDE Files
+.vscode/
+
+## Misc.
+.htaccess
