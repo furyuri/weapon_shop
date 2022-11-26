@@ -8,7 +8,7 @@
 
 define('WEAPON', 'weapon');
 define('WEAPON_NUMBER', 'weapon_number');
-define('FILE', 'data/weapon-list.csv');
+define('FILE', '../data/weapon-list.csv');
 
 $rows = @array_map('str_getcsv', file(FILE)); //store CSV file into array $rows
 if (empty($rows)) { // *** IF Statement to make sure file is loaded ****
@@ -32,6 +32,6 @@ foreach ($rows as $row) {
     // attach to new array "$weapon_list_short"
 }
 
-$weapon_number = isset($_GET[WEAPON_NUMBER]) ? $_GET[WEAPON_NUMBER] : 0;
+$weapon_number = $_GET[WEAPON_NUMBER] ?? 0;
 $weapon_choice = $weapon_list[$weapon_number];
 ?>
