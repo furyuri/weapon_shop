@@ -8,7 +8,9 @@ You can see this "app" online at: https://urifrazier.com/weapon_shop/main.php
 
 ## To Do List
 
-- Create `.htaccess` file to make `main.php` default index page.
 - I'd like to convert this to an MVC setup, so let's do that. But first, let's start by just loading the items into a database instead of to an array (for practice).
 - Create a page/form that allows manual entry of new weapons.
 - Make app use front-end Vue.js, instead of reloading new php pages. Let's create a single page app.
+
+## Done 
+- Create `.htaccess` file to make `main.php` default index page. (11/25/2022)
