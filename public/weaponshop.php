@@ -6,6 +6,7 @@
  * Time: 8:38 PM
  */
 
+include_once '../app/config/config.php';
 include_once 'datafetch.php';
 ?>
 
