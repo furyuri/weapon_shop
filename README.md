@@ -8,9 +8,11 @@ You can see this "app" online at: https://urifrazier.com/weapon_shop/main.php
 
 ## To Do List
 
-- I'd like to convert this to an MVC setup, so let's do that. But first, let's start by just loading the items into a database instead of to an array (for practice).
+- Only run the import on an ad hoc basis, not with every page load. Lets start with adding an import page.
+- I'd like to convert this to an MVC setup.
 - Create a page/form that allows manual entry of new weapons.
 - Make app use front-end Vue.js, instead of reloading new php pages. Let's create a single page app.
 
 ## Done 
 - Create `.htaccess` file to make `main.php` default index page. (11/25/2022)
+- Inserting items into DB instead of just array. (11/27/2022)
