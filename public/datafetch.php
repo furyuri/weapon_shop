@@ -6,6 +6,8 @@
  * Time: 7:13 PM
  */
 
+include_once '../app/libraries/Database.php';
+
 define('WEAPON', 'weapon');
 define('WEAPON_NUMBER', 'weapon_number');
 define('FILE', '../data/weapon-list.csv');
@@ -31,6 +33,57 @@ foreach ($rows as $row) {
     $weapon_list_short[] = $row[0]; //grab the first element in each array/element and
     // attach to new array "$weapon_list_short"
 }
+
+// Import CSV results to DB ----
+/** @var \Database $db */
+$db = new Database;
+
+// Define SQL query.
+$sql = 
+'INSERT INTO weapons (
+    name, 
+    type, 
+    cost, 
+    damage_amt, 
+    damage_type, 
+    properties, 
+    ranged_distance, 
+    special_notes
+    )
+VALUES (
+    :weapon, 
+    :weapon_type, 
+    :cost, 
+    :damage, 
+    :damage_type, 
+    :properties, 
+    :ranged_distance, 
+    :special_notes
+)
+ON DUPLICATE KEY UPDATE
+    type = :weapon_type, 
+    cost = :cost, 
+    damage_amt = :damage, 
+    damage_type = :damage_type, 
+    properties = :properties, 
+    ranged_distance = :ranged_distance, 
+    special_notes = :special_notes
+';
+// Prepare statement.
+$db->query($sql);
+
+// Bind values of weapon properties.
+foreach ($weapon_list as $weapon) {
+    foreach ($weapon as $key => $param) {
+        $db->bind($key, $param);
+    }
+    try {
+        $db->execute();
+    } catch(PDOException $e) {
+        echo $e->getMessage();
+    }    
+}
+// END Import CSV results to DB ----
 
 $weapon_number = $_GET[WEAPON_NUMBER] ?? 0;
 $weapon_choice = $weapon_list[$weapon_number];
